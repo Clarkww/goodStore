@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Flexible Chimney Sweep Set Flue Sweeping Brush and Rod Kit Soot Cleaning Rods - 24 Rods",
+            "price": 22.89,
+            "description": "Flexible Chimney Sweep Set Flue Sweeping Brush and Rod Kit Soot Cleaning Rods - 24 Rods",
+            "sku": "CN-101",
+            "mainImage": "../data/prodimg/id01/HOM-58882-1.jpg",
+            "images": [
+                "./prodimg/id01/HOM-58882-1.jpg",
+                "./prodimg/id01/HOM-58882-2.jpg",
+                "./prodimg/id01/HOM-58882-3.jpg",
+                "./prodimg/id01/HOM-58882-a.jpg",
+                "./prodimg/id01/HOM-58882-b.jpg",
+                "./prodimg/id01/HOM-60150-2.jpg",
+                "./prodimg/id01/HOM-60150-a.jpg",
+                "./prodimg/id01/HOM-60150-b.jpg"
+            ]
+
+        },
+        {
+            "id": 2,
+            "name": "Mini Portable Electric Shaver Electric Razor for Men - Black",
+            "price": 11.99,
+            "description": "Precise and Painless Shaving. The motor speed is as high as 6600rpm, which is twice that of electric shavers, and the shaving is accurate and safe. Even in the case of low power, the motor speed can be stabilized, effectively preventing the beard from getting stuck in the shaver, and realizing painless shaving.n",
+            "sku": "BH-102",
+            "mainImage": "../data/prodimg/id02/bh-102-01.jpg",
+            "images": [
+                "./prodimg/id02/bh-102-01.jpg",
+                "./prodimg/id02/bh-102-02.jpg",
+                "./prodimg/id02/bh-102-03.jpg",
+                "./prodimg/id02/bh-102-04.jpg",
+                "./prodimg/id02/bh-102-05.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "120 pcs 2-35 A Mini Car Blade Fuse Box Set Quality Assorted Van Truck Fuses - S",
+            "price": 5.99,
+            "description": "These can be used in cars, vans, tractors, quads, lawnmowers, HGV's, plant machinery, etc.",
+            "sku": "CR-101",
+            "mainImage": "../data/prodimg/id03/CR-101-01.jpeg",
+            "images": [
+                "./prodimg/id03/CR-101-01.jpg",
+                "./prodimg/id03/CR-101-02.jpg",
+                "./prodimg/id03/CR-101-03.jpg",
+                "./prodimg/id03/CR-101-04.jpg",
+                "./prodimg/id03/CR-101-05.jpg",
+                "./prodimg/id03/CR-101-06.jpg",
+                "./prodimg/id03/CR-101-07.jpg",
+                "./prodimg/id03/CR-101-08.jpg",
+                "./prodimg/id03/CR-101-09.jpg",
+                "./prodimg/id03/CR-101-10.jpg"
+            ]
+
+
+        }
+    ]
+}
