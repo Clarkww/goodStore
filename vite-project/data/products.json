@@ -5,18 +5,19 @@
             "name": "Flexible Chimney Sweep Set Flue Sweeping Brush and Rod Kit Soot Cleaning Rods - 24 Rods",
             "price": 22.89,
             "description": "Flexible Chimney Sweep Set Flue Sweeping Brush and Rod Kit Soot Cleaning Rods - 24 Rods",
-            "sku": "CN-101",
+            "sku": "HE-101",
             "mainImage": "../data/prodimg/id01/HOM-58882-1.jpg",
             "images": [
-                "./prodimg/id01/HOM-58882-1.jpg",
-                "./prodimg/id01/HOM-58882-2.jpg",
-                "./prodimg/id01/HOM-58882-3.jpg",
-                "./prodimg/id01/HOM-58882-a.jpg",
-                "./prodimg/id01/HOM-58882-b.jpg",
-                "./prodimg/id01/HOM-60150-2.jpg",
-                "./prodimg/id01/HOM-60150-a.jpg",
-                "./prodimg/id01/HOM-60150-b.jpg"
-            ]
+                "../data/prodimg/id01/HOM-58882-1.jpg",
+                "../data/prodimg/id01/HOM-58882-2.jpg",
+                "../data/prodimg/id01/HOM-58882-3.jpg",
+                "../data/prodimg/id01/HOM-58882-a.jpg",
+                "../data/prodimg/id01/HOM-58882-b.jpg",
+                "../data/prodimg/id01/HOM-60150-2.jpg",
+                "../data/prodimg/id01/HOM-60150-a.jpg",
+                "../data/prodimg/id01/HOM-60150-b.jpg"
+            ],
+            "category": "Home"
 
         },
         {
@@ -24,15 +25,16 @@
             "name": "Mini Portable Electric Shaver Electric Razor for Men - Black",
             "price": 11.99,
             "description": "Precise and Painless Shaving. The motor speed is as high as 6600rpm, which is twice that of electric shavers, and the shaving is accurate and safe. Even in the case of low power, the motor speed can be stabilized, effectively preventing the beard from getting stuck in the shaver, and realizing painless shaving.n",
-            "sku": "BH-102",
+            "sku": "BY-102",
             "mainImage": "../data/prodimg/id02/bh-102-01.jpg",
             "images": [
-                "./prodimg/id02/bh-102-01.jpg",
-                "./prodimg/id02/bh-102-02.jpg",
-                "./prodimg/id02/bh-102-03.jpg",
-                "./prodimg/id02/bh-102-04.jpg",
-                "./prodimg/id02/bh-102-05.jpg"
-            ]
+                "../data/prodimg/id02/bh-102-01.jpg",
+                "../data/prodimg/id02/bh-102-02.jpg",
+                "../data/prodimg/id02/bh-102-03.jpg",
+                "../data/prodimg/id02/bh-102-04.jpg",
+                "../data/prodimg/id02/bh-102-05.jpg"
+            ],
+            "category": "Beauty"
         },
         {
             "id": 3,
@@ -42,19 +44,90 @@
             "sku": "CR-101",
             "mainImage": "../data/prodimg/id03/CR-101-01.jpeg",
             "images": [
-                "./prodimg/id03/CR-101-01.jpg",
-                "./prodimg/id03/CR-101-02.jpg",
-                "./prodimg/id03/CR-101-03.jpg",
-                "./prodimg/id03/CR-101-04.jpg",
-                "./prodimg/id03/CR-101-05.jpg",
-                "./prodimg/id03/CR-101-06.jpg",
-                "./prodimg/id03/CR-101-07.jpg",
-                "./prodimg/id03/CR-101-08.jpg",
-                "./prodimg/id03/CR-101-09.jpg",
-                "./prodimg/id03/CR-101-10.jpg"
-            ]
+                "../data/prodimg/id03/CR-101-01.jpeg",
+                "../data/prodimg/id03/CR-101-02.jpeg",
+                "../data/prodimg/id03/CR-101-03.jpeg",
+                "../data/prodimg/id03/CR-101-04.jpeg",
+                "../data/prodimg/id03/CR-101-05.jpeg",
+                "../data/prodimg/id03/CR-101-06.jpeg",
+                "../data/prodimg/id03/CR-101-07.jpeg",
+                "../data/prodimg/id03/CR-101-08.jpeg",
+                "../data/prodimg/id03/CR-101-09.jpeg",
+                "../data/prodimg/id03/CR-101-10.jpeg"
+            ],
+            "category": "Car"
 
 
+        },
+        {   
+            "id": 4,
+            "name": "100pcs Air Fryer Liner Disposable Paper Non-stick Pan Parchment Baking Papers - 20cm Khaki",
+            "price": 8.98,
+            "description": "These Air Fryer Liner Disposable Papers will prevent your breads, buns or cakes from sticking to your air fryer basket, keeping your food presentation beautiful and your basket clean.",
+            "sku": "KN-101",
+            "mainImage": "../data/prodimg/id04/KN-101-01.jpg",
+            "images": [
+                "../data/prodimg/id04/KN-101-01.jpg",
+                "../data/prodimg/id04/KN-101-02.jpg",
+                "../data/prodimg/id04/KN-101-03.jpg",
+                "../data/prodimg/id04/KN-101-04.jpg"
+            ],
+            "category": "Kitchen"
+        },
+
+        {
+            "id": 5,
+            "name": "Hunchback Vibration Reminder Hanging Neck LCD Display Sitting Posture Reminder for Children Back Correction - Orange",
+            "price": 12.99,
+            "description": "The hunchback vibration reminder hanging neck LCD display sitting posture reminder is suitable for children back correction.",
+            "sku": "HH-101",
+            "mainImage": "../data/prodimg/id05/HH-101-01.jpg",
+            "images": [
+                "../data/prodimg/id05/HH-101-01.jpg",
+                "../data/prodimg/id05/HH-101-02.jpg",
+                "../data/prodimg/id05/HH-101-03.jpg",
+                "../data/prodimg/id05/HH-101-04.jpg"
+            ],
+            "category": "Health"
+        },
+
+        {
+            "id": 6,
+            "name": "5ml Portable Mini Refillable Perfume Bottle Spray Round Tube Pump Empty Cosmetic Container Atomizer Scent Bottle for Travel - Pink",
+            "price": 3.99,
+            "description": "This perfume bottle is small and portable, suitable for carrying around. It is made of high-quality material, durable and easy to use. It is perfect for storing your favorite perfume, aftershave or makeup remover when you travel. Capacity: 5ml. Material: PP. Size: 8.5cm x 1.5cm. Color: Pink.",
+            "sku": "TA-101",
+            "mainImage": "../data/prodimg/id06/TA-101-01.jpg",
+            "images": [
+                "../data/prodimg/id06/TA-101-01.jpg",
+                "../data/prodimg/id06/TA-101-02.jpg",
+                "../data/prodimg/id06/TA-101-03.jpg",
+                "../data/prodimg/id06/TA-101-04.jpg",
+                "../data/prodimg/id06/TA-101-05.jpg",
+                "../data/prodimg/id06/TA-101-06.jpg"
+            ],
+            "category": "Travel Accessories"
+        },
+        {
+            "id": 7,
+            "name": "Neckband Bladeless Lazy Fan Neck Hanging Cooler USB Rechargeable - White",
+            "price": 19.99,
+            "description": "This Neckband Bladeless Lazy Fan Neck Hanging Cooler USB Rechargeable - White is designed for your comfort and convenience! It is perfect for use when you are outdoors, exercising, or simply relaxing at home. With its unique design, this fan will keep you cool without getting in the way of your activities. It is easy to use, rechargeable, and has a long battery life. You can wear it around your neck, hang it from a hook, or place it on a flat surface. It is lightweight and portable, making it ideal for travel. ",
+            "sku": "HE-102",
+            "mainImage": "../data/prodimg/id07/HE-102-01.jpg",
+            "images": [
+                "../data/prodimg/id07/HE-102-01.jpg",
+                "../data/prodimg/id07/HE-102-02.jpg",
+                "../data/prodimg/id07/HE-102-03.jpg",
+                "../data/prodimg/id07/HE-102-04.jpg",
+                "../data/prodimg/id07/HE-102-05.jpg"
+            ],
+            "category": "Home"
         }
+        
+        
+        
+        
+        
     ]
 }

@@ -8,7 +8,7 @@ import UserButton from './UserButton'
 // user acount symbol from react icons
 import { FaUserCircle } from 'react-icons/fa'
 
-export default function Header() {
+export default function Header({cart, addToCart, removeFromCart}) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleNav = () => setIsOpen(!isOpen)
@@ -22,7 +22,7 @@ export default function Header() {
         <h1 className='main-h1'>Good Store</h1>
         <div className='header-right-items'>
           <input className='search' type='text' placeholder='Search' />
-          <CartButton />
+          <CartButton cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
           <UserButton />
 
 

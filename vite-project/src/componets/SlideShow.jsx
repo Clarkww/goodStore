@@ -7,6 +7,10 @@ import img4 from '../assets/slideshow/prod4.jpg'
 
 import './comp-css/slides.css'
 
+import { AiOutlineRight } from 'react-icons/ai'
+import { AiOutlineLeft } from 'react-icons/ai'
+
+
 export default function SlideShow() {
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -38,7 +42,7 @@ export default function SlideShow() {
       </div>
       <div className="slideshow-controls">
         <button className="slideshow-btn" onClick={handlePrev}>
-          Back
+          <AiOutlineLeft />
         </button>
         <div className="slideshow-dots">
           {images.map((_, index) => (
@@ -50,8 +54,8 @@ export default function SlideShow() {
           ))}
         </div>
         <button className="slideshow-btn" onClick={handleNext}>
-          Forward
-        </button>
+          <AiOutlineRight />
+        </button>`
       </div>
     </div>
   )

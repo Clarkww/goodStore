@@ -1,46 +1,56 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import './comp-css/product-page.css';
 
-import { useParams } from 'react-router-dom'
+export default function ProductPage({product, addToCart}) {
+  const { id } = useParams()
+  const index = id - 1
 
-import './comp-css/product-page.css'
-
-export default function ProductPage({product}) {
-    const { id } = useParams()
-
-    let index = id - 1
-
-    console.log(id)
-
-    // add product to local storage when add to cart button is clicked
-    const addToCart = () => {
-      let cart = JSON.parse(localStorage.getItem('cart'))
-      if (cart === null) {
-        cart = []
-      }
-      console.log(cart)
-      cart.push(product.products[index])
-      localStorage.setItem('cart', JSON.stringify(cart))
-      
-    }
+  const [activeIndex, setActiveIndex] = useState(0)
 
 
-    
+  // retrive category from data
+  const category = product.products[index].category
+
+  
+
   return (
     <>
-      <main>
-        <p className='cat-header'>Catagory: Household -- {
+      <main className='product-page'>
+        <p className='cat-header'>Category: {category} -- {
           // only show first 20 characters of product name
-          product.products[index].name.length > 20 ? product.products[index].name.slice(0, 20) + '...' :
+          product.products[index].name.length > 30 ? product.products[index].name.slice(0, 20) + '...' :
           product.products[index].name
-
-
         }</p>
         <h3>{product.products[index].name}</h3>
-        <img src={product.products[index].mainImage} alt="" className='prod-image'/>
-        <button id='addToCartBtn' onClick={addToCart}>Add to cart</button>
+        <div className="product-img-section">
+          <div className="big-image-container">
+            <img src={product.products[index].images[activeIndex]} />
+          </div>
+          <div className="product-image-row">
+              {product.products[index].images.map((image, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={image}
+                    className={activeIndex === index ? "active" : ""}
+                    onClick={() => setActiveIndex(index)}
+                    />)})}
+                    
+          </div>
+        </div>
+        <button id='addToCartBtn' onClick={
+          
+          () => {
+            addToCart(product.products[index])
+            console.log(product.products[index])
+          }
+
+        }>Add to cart</button>
         <p>{product.products[index].description}</p>
         <p>£{product.products[index].price}</p>
       </main>
     </>
   )
 }
+

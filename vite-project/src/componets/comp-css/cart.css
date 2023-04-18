@@ -21,6 +21,9 @@
   display: none;
   padding: 30px;
 }
+.show {
+  display: block;
+}
 
 .header-btn:hover + .cart-popup {
   display: block;
@@ -38,6 +41,7 @@
   align-items: center;
   margin-bottom: 40px;
   border-top: rgba(0, 0, 0, 0.223) 1px solid;
+  padding-top: 20px;
 }
 
 .cart-items li button {
@@ -53,10 +57,27 @@
   background-color: #d32f2f;
 }
 
-.qty {
-  display: flex;
-  flex-grow: 3;
-  flex-basis: 40%s;
-  align-items: center;
-  margin: 40px;
+.name {
+  font-size: 12px;
+  font-weight: 600;
+  width: 40%;
+  /* color: #fff; */
+}
+.price {
+  font-size: 12px;
+  font-weight: 600;
+  /* color: #fff; */
+}
+
+.remove-btn {
+  font-size: 12px;
+  font-weight: 600;
+  /* color: #fff; */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.remove-btn:hover {
+  color: #d32f2f;
+  text-decoration: none;
 }

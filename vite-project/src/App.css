@@ -27,6 +27,11 @@ body{
   font-size: 1.8rem;
   /* font-weight: 500; */
   margin: 0;
+  /* center of header */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  
 }
 
 .hamburger-btn {
@@ -146,8 +151,12 @@ body{
 
 .card-btn {
   background-color :rgba(255, 228, 196, 0.232);
-  width: 45%;
+  width: 50%;
   height: 40px;
+}
+
+.view-prod-btn {
+  width: 100%;
 }
 
 .prod-image {
