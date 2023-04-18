@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 import products from '../assets/products'
 
-export default function ProductCard({img, name, price, id, addToCart}) {
+export default function ProductCard({img, name, price, id, addToCart, product}) {
+  // console.log(product)
   return (
     <div className='card'>
         <Link to={`/products/${id}`}>
@@ -14,7 +15,7 @@ export default function ProductCard({img, name, price, id, addToCart}) {
         </Link>
 
         <div className='card-btn-area'>
-          <button className='card-btn' onClick={addToCart}>Add to cart</button>
+          <button className='card-btn' onClick={() => addToCart(product.products[id])}>Add to cart</button>
           <Link to={`/products/${id}`}>
           <button className='card-btn view-prod-btn'>View Product</button>
           </Link>

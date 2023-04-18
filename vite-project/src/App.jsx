@@ -9,7 +9,9 @@ import HomePage from './componets/HomePage'
 
 import Footer from './componets/Footer'
 
-import AllProductsPage from './componets/AllProductsPage';
+import AllProductsPage from './componets/AllProductsPage'
+
+import CategoryPage from './componets/CategoryPage'
 
 
 
@@ -118,6 +120,8 @@ const removeFromCart = (product) => {
             <Route exact path='/' element={<HomePage data={data} addToCart={addToCart} />} />
             <Route path='/products/:id' element={<ProductPage addToCart={addToCart} product={data} />} />
             <Route path='/products/all' element={<AllProductsPage data={data} addToCart={addToCart} />} />
+            {/* route for category page */}
+            <Route path='/products/cat/:category' element={<CategoryPage data={data} addToCart={addToCart} />} />
           </Routes>
         <Footer />
       </Router>

@@ -8,9 +8,11 @@ export default function ProductPage({product, addToCart}) {
 
   const [activeIndex, setActiveIndex] = useState(0)
 
-
+  console.log(product.products[index].category)
   // retrive category from data
   const category = product.products[index].category
+
+  
 
   
 

@@ -21,7 +21,7 @@ export default function HomePage({data, addToCart}) {
       {
         data.products.slice(0, 3).map((product) => {
           return (
-            <ProductCard img={product.mainImage} name={product.name} price={product.price} id={product.id} addToCart={addToCart} />
+            <ProductCard img={product.mainImage} name={product.name} price={product.price} id={product.id} addToCart={addToCart} product={data} />
           )})
       }
     </section>
