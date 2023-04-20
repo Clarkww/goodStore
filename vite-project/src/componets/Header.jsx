@@ -4,14 +4,31 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 import CartButton from './CartButton'
 import UserButton from './UserButton'
+import SearchBar from './SearchBar'
 
 // user acount symbol from react icons
 import { FaUserCircle } from 'react-icons/fa'
 
-export default function Header({cart, addToCart, removeFromCart}) {
+export default function Header({cart, addToCart, removeFromCart, data, }) {
+
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleNav = () => setIsOpen(!isOpen)
+  const toggleNav = () => {
+    setIsOpen(!isOpen)
+    let main = document.querySelector('main')
+    main.classList.toggle('main-open')
+  }
+
+
+ 
+
+
+  let closeNav = () => {
+    setIsOpen(false)
+    let main = document.querySelector('main')
+    main.classList.remove('main-open')
+  }
+
 
   return (
     <div className='header-container'>
@@ -21,7 +38,7 @@ export default function Header({cart, addToCart, removeFromCart}) {
         </button>
         <h1 className='main-h1'>Good Store</h1>
         <div className='header-right-items'>
-          <input className='search' type='text' placeholder='Search' />
+          <SearchBar data={data} />
           <CartButton cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
           <UserButton />
 
@@ -31,10 +48,10 @@ export default function Header({cart, addToCart, removeFromCart}) {
       <nav className={`nav ${isOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <Link onClick={closeNav} to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/products/all'>Products</Link>
+            <Link onClick={closeNav} to='/products/all'>Products</Link>
           </li>
         </ul>
       </nav>

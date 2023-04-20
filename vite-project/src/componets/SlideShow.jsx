@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import img1 from '../assets/slideshow/prod1.jpg'
+
 import img2 from '../assets/slideshow/prod2.jpg'
 import img3 from '../assets/slideshow/prod3.jpg'
 import img4 from '../assets/slideshow/prod4.jpg'
@@ -14,7 +14,7 @@ import { AiOutlineLeft } from 'react-icons/ai'
 export default function SlideShow() {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const images = [img1, img2, img3, img4]
+  const images = [img2, img3, img4]
 
   const handleNext = () => {
     setActiveIndex((activeIndex + 1) % images.length)

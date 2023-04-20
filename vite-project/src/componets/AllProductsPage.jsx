@@ -25,7 +25,7 @@ export default function ({data, addToCart}) {
                 {categories.map((category) => {
                     return (
                         <li>
-                            <a href={`/products/cat/${category}`}>{category}</a>
+                            <a href={`/products&cat/${category}`}>{category}</a>
                         </li>
                     )
                 })}
@@ -37,7 +37,9 @@ export default function ({data, addToCart}) {
             // map through all products
             data.products.map((product) => {
                 return (
-                    <div className='prod-page-card'>
+                    <div key={product.id} className='prod-page-card'>
+                        {console.log(product.mainImage)}
+
                         <img src={product.mainImage} alt="" />
                         
                         <div className="info-aside">

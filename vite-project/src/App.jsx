@@ -23,6 +23,7 @@ function App() {
   
   const [cart, setCart] = useState([])
 
+
   
   useEffect(() => {
     fetch('http://localhost:3000/data')
@@ -115,13 +116,13 @@ const removeFromCart = (product) => {
     <>
 
       <Router>
-      <Header cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
+      <Header data={data} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
           <Routes>
             <Route exact path='/' element={<HomePage data={data} addToCart={addToCart} />} />
             <Route path='/products/:id' element={<ProductPage addToCart={addToCart} product={data} />} />
             <Route path='/products/all' element={<AllProductsPage data={data} addToCart={addToCart} />} />
             {/* route for category page */}
-            <Route path='/products/cat/:category' element={<CategoryPage data={data} addToCart={addToCart} />} />
+            <Route path='/products&cat/:category' element={<CategoryPage data={data} addToCart={addToCart} />} />
           </Routes>
         <Footer />
       </Router>

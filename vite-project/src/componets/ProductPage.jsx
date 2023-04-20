@@ -41,16 +41,18 @@ export default function ProductPage({product, addToCart}) {
                     
           </div>
         </div>
-        <button id='addToCartBtn' onClick={
-          
-          () => {
-            addToCart(product.products[index])
-            console.log(product.products[index])
-          }
 
-        }>Add to cart</button>
-        <p>{product.products[index].description}</p>
-        <p>£{product.products[index].price}</p>
+        <aside>
+          <button id='addToCartBtn' onClick={
+          
+            () => {
+              addToCart(product.products[index])
+            }
+          }>Add to cart</button>
+          <p>{product.products[index].description}</p>
+          <p>£{product.products[index].price}</p>
+        </aside>
+        
       </main>
     </>
   )

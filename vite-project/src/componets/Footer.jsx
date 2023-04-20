@@ -5,7 +5,7 @@ export default function Footer() {
     <>
         <footer>
             <p>© 2021 - All Rights Reserved</p>
-            
+            <a href="">Contact us</a>
         </footer>
     </>
   )
