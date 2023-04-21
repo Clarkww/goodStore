@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 
 import './comp-css/searchbar.css'
 
-export default function SearchBar({data}) {
+import { FaSearch } from 'react-icons/fa'
+
+export default function SearchBar({data, gSearchTerm, setGSearchTerm}) {
 
     const [searchTerm, setSearchTerm] = useState('')
     const [suggestions, setSuggestions] = useState([])
@@ -24,7 +26,34 @@ export default function SearchBar({data}) {
       const handleSuggestionClick = (name) => {
         setSearchTerm(name)
         setSuggestions([])
+        
+        // 
       }
+      
+      // const handleSearch = () => {
+      //   setGSearchTerm(searchTerm)
+      //   setSearchTerm('')
+      //   setSuggestions([])
+      //   // link to search page
+
+
+      // }
+
+      // onclick redirect to search page with search term
+      const handleSearch = () => {
+        // setGSearchTerm(searchTerm)
+        setSearchTerm('')
+        setSuggestions([])
+        // link to search page
+        window.location.href = `/search/${searchTerm}`
+        
+
+      }
+
+
+
+
+      
     
 
 
@@ -33,7 +62,20 @@ export default function SearchBar({data}) {
             <input className='search-input' type='text' placeholder='Search'
             value={searchTerm}
             onChange={handleInputChange}
+            // on key press enter handle search
+            onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleSearch()
+                }
+              }}
             />
+
+            
+            <button className='search-btn'
+            onClick={handleSearch}
+            >
+                <FaSearch />
+            </button>
 
         {suggestions.length > 0 && (
         <ul className='suggestions-list'>

@@ -13,6 +13,8 @@ import AllProductsPage from './componets/AllProductsPage'
 
 import CategoryPage from './componets/CategoryPage'
 
+import SearchPage from './componets/SearchPage';
+
 
 
 import './App.css'
@@ -22,6 +24,8 @@ function App() {
   const [data, setData] = useState(null)
   
   const [cart, setCart] = useState([])
+
+  let [gSearchTerm, setGSearchTerm] = useState('')
 
 
   
@@ -116,13 +120,15 @@ const removeFromCart = (product) => {
     <>
 
       <Router>
-      <Header data={data} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
+      <Header data={data} cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} gSearchTerm={gSearchTerm} setGSearchTerm={setGSearchTerm} />
           <Routes>
             <Route exact path='/' element={<HomePage data={data} addToCart={addToCart} />} />
             <Route path='/products/:id' element={<ProductPage addToCart={addToCart} product={data} />} />
             <Route path='/products/all' element={<AllProductsPage data={data} addToCart={addToCart} />} />
             {/* route for category page */}
             <Route path='/products&cat/:category' element={<CategoryPage data={data} addToCart={addToCart} />} />
+            {/* route for search page */}
+            <Route path='/search/:searchTerm' element={<SearchPage data={data} addToCart={addToCart} gSearchTerm={gSearchTerm} />} />
           </Routes>
         <Footer />
       </Router>

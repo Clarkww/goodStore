@@ -9,7 +9,7 @@ import SearchBar from './SearchBar'
 // user acount symbol from react icons
 import { FaUserCircle } from 'react-icons/fa'
 
-export default function Header({cart, addToCart, removeFromCart, data, }) {
+export default function Header({cart, addToCart, removeFromCart, data, gSearchTerm, setGSearchTerm }) {
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -38,7 +38,7 @@ export default function Header({cart, addToCart, removeFromCart, data, }) {
         </button>
         <h1 className='main-h1'>Good Store</h1>
         <div className='header-right-items'>
-          <SearchBar data={data} />
+          <SearchBar data={data} gSearchTerm={gSearchTerm} setGSearchTerm={setGSearchTerm} />
           <CartButton cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} />
           <UserButton />
 
