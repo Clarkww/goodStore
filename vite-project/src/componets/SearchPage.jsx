@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SearchPage({data, gSearchTerm, setGSearchTerm}) {
+export default function SearchPage({data}) {
 
   // get search term from url after the last /
   const searchTerm = window.location.href.split('/').pop()

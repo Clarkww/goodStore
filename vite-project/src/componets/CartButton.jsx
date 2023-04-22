@@ -17,6 +17,21 @@ export default function CartButton({ cart, addToCart, removeFromCart}) {
     const cartPopup = document.querySelector('.cart-popup')
     cartPopup.classList.toggle('show')
   }
+
+  // event listener to close cart popup when clicking outside of it
+  useEffect(() => {
+    const cartPopup = document.querySelector('.cart-popup')
+    const cartBtn = document.querySelector('.header-btn')
+    const closeCart = (e) => {
+      if (e.target !== cartPopup && e.target !== cartBtn) {
+        cartPopup.classList.remove('show')
+      }
+    }
+    document.addEventListener('click', closeCart)
+    return () => {
+      document.removeEventListener('click', closeCart)
+    }
+  }, [])
   
   console.log(cart)
 
